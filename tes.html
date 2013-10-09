@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TES</title>
+		<script type="text/javascript" src="LogicGate.js"></script>
+		<body>
+			<script type="text/javascript">
+				var A = [false, true, false, true];
+				var B = [false, false, true, true];
+				
+				var logicAND1 = new LogicAND(A[0], B[0]);
+				var logicAND2 = new LogicAND(A[1], B[1]);
+				var logicAND3 = new LogicAND(A[2], B[2]);
+				var logicAND4 = new LogicAND(A[3], B[3]);
+				
+				var logicOR1 = new LogicOR(A[0], B[0]);
+				var logicOR2 = new LogicOR(A[1], B[1]);
+				var logicOR3 = new LogicOR(A[2], B[2]);
+				var logicOR4 = new LogicOR(A[3], B[3]);
+				
+				var logicXOR1 = new LogicXOR(A[0], B[0]);
+				var logicXOR2 = new LogicXOR(A[1], B[1]);
+				var logicXOR3 = new LogicXOR(A[2], B[2]);
+				var logicXOR4 = new LogicXOR(A[3], B[3]);
+				
+				document.write("Logic AND 1 = " + logicAND1.getOutput() + "<br />");
+				document.write("Logic AND 2 = " + logicAND2.getOutput() + "<br />");
+				document.write("Logic AND 3 = " + logicAND3.getOutput() + "<br />");
+				document.write("Logic AND 4 = " + logicAND4.getOutput() + "<br />");
+				document.write("<br />");
+				
+				document.write("Logic OR 1 = " + logicOR1.getOutput() + "<br />");
+				document.write("Logic OR 2 = " + logicOR2.getOutput() + "<br />");
+				document.write("Logic OR 3 = " + logicOR3.getOutput() + "<br />");
+				document.write("Logic OR 4 = " + logicOR4.getOutput() + "<br />");
+				document.write("<br />");
+				
+				document.write("Logic XOR 1 = " + logicXOR1.getOutput() + "<br />");
+				document.write("Logic XOR 2 = " + logicXOR2.getOutput() + "<br />");
+				document.write("Logic XOR 3 = " + logicXOR3.getOutput() + "<br />");
+				document.write("Logic XOR 4 = " + logicXOR4.getOutput() + "<br />");
+				document.write("<br />");
+			</script>
+		</body>
+	</head>
+</html>
